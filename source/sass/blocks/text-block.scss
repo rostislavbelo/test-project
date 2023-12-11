@@ -1,0 +1,37 @@
+.text-block {
+  margin-bottom: 69px;
+
+  &__wrap {
+    padding: 0 116px;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 88px;
+    margin-bottom: 40px;
+    margin: 0 0 40px 0;
+
+    span {
+      color: #01ffc2;
+    }
+  }
+
+  &__text {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 41px;
+    display: block;
+    color: $color-default-white;
+
+    span {
+      color: #01ffc2;
+      //по макету font-weight = 400, но визуально надо 700
+      font-weight: 700;
+    }
+  }
+
+
+
+}

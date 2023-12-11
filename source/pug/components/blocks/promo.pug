@@ -1,0 +1,30 @@
+mixin promo()
+  section.promo
+    h2.visually-hidden Special offers
+    .container
+      .promo__top
+        .promo__title-area
+          p.promo__title Watch the videos and <span>get the boxes</span>
+          span.promo__text While watching the feed you can get boxes<br>with NFT or LEE tokens
+        .promo__top-img
+          +picture("content", "box", "png", 405, 306, "Box")
+
+      .promo__banner
+        +icon("banner-bg", 1354, 205)
+        span.promo__banner-text Don’t miss the <span>Presale</span>
+        +btn({text:"Buy NFT glasses", type:"button"}).promo__btn
+
+      .promo__bottom
+        .promo__bottom-text
+          p.promo__bottom-title Cheelee team has<br><span>already launched product</span>
+          span.promo__bottom-description The project is based on the already launched in 2021 short video platform&nbsp;- NUTSon (1.5M users, 33% engagement rate and 15K videos created daily)
+        .promo__bottom-img
+          +picture("content", "double-screen", "png", 1088, 822, "")
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+.handler {
+  display: flex;
+  align-items: center;
+  margin-right: 19px;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 2px;
+    background-color: transparent;
+    flex-shrink: 0;
+
+    svg {
+      width: 7px;
+      height: 5px;
+    }
+  }
+
+  &__title {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10px;
+    display: block;
+    color: #e5f7ff;
+  }
+
+  &__item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $color-default-white;
+  }
+
+  &__group {
+    margin-left: 6px;
+  }
+}

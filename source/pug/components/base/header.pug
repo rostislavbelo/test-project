@@ -1,0 +1,49 @@
+mixin header(headerMods, currentUrl)
+  header.header
+    .container
+      .header__logo-block
+        if(currentUrl === "index.html")
+          span.header__logo
+            +picture("content", "cheelee-icon-logo", "png", 35, 37, "")
+            +icon("logo-text", 92, 31)
+        else
+          a.header__logo(href="index.html" aria-label="Переход на главную")
+            +picture("content", "cheelee-icon-logo", "png", 35, 37, "")
+            +icon("logo-text", 92, 31)
+      .header__nav-block
+        +main-nav(headerLinks)
+
+      .header__handlers
+        .handler
+          +picture("content", "cheel", "png", 30, 30, "")
+          .handler__group
+            span.handler__title CHEEL
+            .handler__price
+              ul.handler__list
+                li.handler__item $8,00
+              button.handler__btn.btn(type="button" aria-label="Open")
+                +icon("triangle", 7, 5)
+        .handler
+          +picture("content", "lee", "png", 30, 30, "")
+          .handler__group
+            span.handler__title LEE
+            .handler__price
+              ul.handler__list
+                li.handler__item $8,00
+              button.handler__btn.btn(type="button" aria-label="Open")
+                +icon("triangle", 7, 5)
+      .header__label
+        a(href="#").header__audit-label.link(aria-label="Go audit center")
+          +icon("audit-label", 177, 58)
+
+      .header__lang-switch
+        ul.header__lang-list
+          li.header__lang-item EN
+        button.header__lang-btn.btn(aria-label="Open")
+          +icon("triangle-gray", 10, 6)
+
+
+
+
+
+

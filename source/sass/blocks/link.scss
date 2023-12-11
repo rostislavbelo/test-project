@@ -1,0 +1,9 @@
+.link {
+  cursor: pointer;
+  transition: opacity $trans-default;
+  font-family: $ff-montserrat;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

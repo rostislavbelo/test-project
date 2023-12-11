@@ -1,0 +1,28 @@
+.main-nav {
+  width: 100%;
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #5e636e;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  .is-active &__link {
+    color: #01ffc2;
+    pointer-events: none;
+    font-weight: 700;
+  }
+}

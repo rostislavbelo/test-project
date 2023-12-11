@@ -1,0 +1,21 @@
+mixin footer(footerMods)
+  h2.visually-hidden Информация о компании
+  footer.footer(class=footerMods)
+    .container
+      .footer__wrap
+        .footer__about.footer__block
+          h3.footer__about-title.footer__title О компании
+          ul.footer__about-list
+            li.footer__about-item
+              a.footer__link(href="#") Партнёрская программа
+            li.footer__about-item
+              a.footer__link(href="#") Вакансии
+        .footer__nav.footer__block
+          h3.footer__nav-title.footer__title Меню
+          +mainNav(footerLinks)
+        .footer__contacts.footer__block
+          h3.footer__contacts-title.footer__title Контакты
+          +contacts()
+        .footer__copyright
+          span ©WELBEX 2022. Все права защищены.
+          a(href="#") Политика конфиденциальности

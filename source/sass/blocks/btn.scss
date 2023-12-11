@@ -1,0 +1,31 @@
+.btn {
+  display: inline-flex;
+  padding: 21px 34px;
+
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  color: #fcfcfd;
+
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+  transform: translateZ(0);
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

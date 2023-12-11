@@ -1,0 +1,31 @@
+-
+  const headerLinks = [
+    {
+      href: "#",
+      text: "About us"
+    },
+    {
+      href: "#",
+      text: "Roadmap"
+    },
+    {
+      href: "#",
+      text: "Documents"
+    },
+    {
+      href: "#",
+      text: "F.A.Q."
+    },
+    {
+      href: "buy-nft-glasses.html",
+      text: "Buy NFT glasses",
+    },
+  ]
+
+mixin main-nav(data)
+  nav.main-nav
+    .main-nav__wrapper
+      ul.main-nav__list
+        each link in data
+          li.main-nav__item(class = currentUrl === link.href ? "is-active" : "")
+            a.main-nav__link.link(href=link.href)=link.text
