@@ -27,7 +27,8 @@
     line-height: 38px;
     margin-bottom: 41px;
     display: block;
-    color: $color-default-white;
+    // Станная неоднозначность тут с цветами текста через градиент в макете
+    //color: $color-default-white;
 
     span {
       color: #01ffc2;
@@ -35,7 +36,4 @@
       font-weight: 700;
     }
   }
-
-
-
 }
