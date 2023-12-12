@@ -92,6 +92,10 @@
     padding: 55px 116px ;
     position: relative;
     min-height: 773px;
+
+    @include vp-1511 {
+      padding: 30 2vw ;
+    }
   }
 
   &__bottom-title {
@@ -121,9 +125,15 @@
     top: -49px;
     right: -80px;
 
+    @include vp-1511 {
+      width: 60vw;
+      right: 0;
+    }
+
     img {
       width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
 

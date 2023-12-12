@@ -4,4 +4,8 @@
   margin: 0 auto;
   padding: 0 80px;
   position: relative;
+
+  @include vp-1511 {
+    padding: 0 2vw;
+  }
 }

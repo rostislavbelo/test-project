@@ -3,6 +3,10 @@
 
   &__wrap {
     padding: 0 116px;
+
+    @include vp-1511 {
+      padding: 0 2vw;
+    }
   }
 
   &__title {
